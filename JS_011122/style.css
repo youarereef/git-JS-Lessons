@@ -1,0 +1,35 @@
+/* body { 
+margin: 0%; /* в body отступы по краям по умолчанию - их нужно убрать */
+/*overflow: hidden; /* скрываем полосы прокрутки */
+/*} */
+
+/* canvas {
+   background: #000000;  
+   background-image: url(pics/f2.jpg);
+   background-size: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: absolute; 
+  
+} */
+body {
+   background-image: url(pics/f2.jpg); 
+
+   background-size: cover;
+   position: absolute; 
+   margin: 0%;
+   overflow: hidden;
+ }
+
+canvas {
+   animation: bg-color 25s infinite;
+}
+
+   @keyframes bg-color {
+      0% { background-color: #00000079; }
+      20% { background-color: #50410547; }
+      40% { background-color: #1832317b; }
+      60% { background-color: #015a9674; }
+      80% { background-color: #541c6a4f; }
+      100% { background-color: #00000079;  }
+    }
